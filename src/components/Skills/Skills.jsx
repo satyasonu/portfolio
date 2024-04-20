@@ -11,7 +11,7 @@ const Skills = () => {
         <span className="uppercase font-bold md:text-[30px] text-[25px] text-teal-700">~Skill set~</span>
       </div>
 
-      <div className="flex flex-wrap justify-center gap-10 mt-10">
+      <div className="flex flex-wrap justify-center gap-10 mt-10 w-11/12 md:w-full">
       {Icons && Icons.map((icon, index) => {
         return (
           <div className="sm:h-32 sm:w-32 h-20 w-20 hover:rounded-full flex justify-center items-center  transition duration-500 ease-in-out hover:border hover:shadow-lg" key={index}>
