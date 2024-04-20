@@ -18,7 +18,7 @@ export default {
           '100%' :{transform: 'translateY(0px)'}
         },
         marquee : {
-          '0%': { transform : 'translateX(0%)'},
+          '0%': { transform : 'translateX(100%)'},
           '100%' : { transform : 'translateX(-100%)'}
         },
         justSlideUp: {

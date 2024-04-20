@@ -8,6 +8,7 @@ import { FaArrowUp, FaArrowDown } from "react-icons/fa6";
 
 const Profile = () => {
   const [theme, setTheme] = useState(localStorage.getItem("theme"));
+
   useEffect(() => {
     window.addEventListener("storage", () => {
       setTheme(localStorage.getItem("theme"));
@@ -35,9 +36,8 @@ const Profile = () => {
           {theme === "light" ? (
             <img
               src={MyImage}
-              height={250}
-              width={250}
-              className="rounded-[100%] drop-shadow-md hover:animate-wiggle"
+
+              className="rounded-[100%] drop-shadow-md hover:animate-wiggle h-52 w-52 sm:h-60 sm:w-60"
               alt="MyImage"
             />
           ) : (
@@ -118,6 +118,7 @@ const Profile = () => {
       <div className="cursor-pointer mt-10 fixed bottom-10 right-5">
         <div onClick={scrollToTop} className="h-10 w-10 sm:h-20 sm:w-20 border border-black rounded-full flex justify-center items-center bg-slate-300 mb-4 dark:bg-slate-500"><FaArrowUp className="h-5 w-5 sm:h-10 sm:w-10 dark:text-slate-900 "/></div>
         <div onClick={scrollToBottom} className="h-10 w-10 sm:h-20 sm:w-20 border border-black rounded-full flex justify-center items-center bg-slate-300 dark:bg-slate-500"><FaArrowDown className="h-5 w-5 sm:h-10 sm:w-10 dark:text-slate-900" /></div>
+        <div className="flex justify-center items-center"><span className="text-[10px] text-slate-300">{window.screen.availWidth+ "x" +window.screen.availHeight}</span></div>
       </div>
     </div>
   );

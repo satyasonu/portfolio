@@ -5,8 +5,8 @@ import { Icons } from "../../Utils/Icons";
 const Skills = () => {
   const [ref, inView] = useInView({ threshold: 0.5 })
   return (
-    <div className="flex-col flex mt-32 justify-center sm:mb-32 mb-32 h-full sm:mt-16  items-center sm:w-8/12" ref={ref}>
-        <div className="animate-marquee text-nowrap text-slate-500 sm:visible md:invisible">Double tap on each icon to check the completion percentage</div>
+    <div className="flex-col flex md:mt-32 mt-10  justify-center sm:mb-32 mb-32 h-full sm:mt-16  items-center sm:w-8/12" ref={ref}>
+        <div className="animate-marquee text-nowrap text-slate-500 sm:visible md:invisible">Double tap on each icon to check the skill completion percentage</div>
       <div className="mt-2 flex justify-center ">
         <span className="uppercase font-bold md:text-[30px] text-[25px] text-teal-700">~Skill set~</span>
       </div>
