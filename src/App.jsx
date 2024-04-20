@@ -24,11 +24,13 @@ const App = () => {
         <Routes>
           <Route element={<SuspenseLayout />}>
             <Route path="/" element={<Home />}>
+            
               
             </Route>
             <Route path="/profile" element={<Profile />} />
             <Route path="/test" element={<Test />} />
           </Route>
+          <Route path="*" element={<Home />} />
         </Routes>
       </Router>
     </div>
